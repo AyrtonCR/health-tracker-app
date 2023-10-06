@@ -10,6 +10,8 @@ Health Tracker App is a responsive web app that is aimed at helping users make h
 
 The web app will include different features that are aimed at helping out a user identify negative or positive health patterns in their diet. The main one will be an input section where a user can get feedback about thei dietary choices.
 
+![health-app-tracker-problem](https://github.com/AyrtonCR/health-tracker-app/assets/98923297/fa1c79b2-1c33-4669-b62e-5180d528db12)
+
 <br>
 
 Some of the features this app will include are ...
@@ -22,6 +24,8 @@ Some of the features this app will include are ...
 - A links page to external health content that users might fins useful.
 
 <br>
+
+![health-app-tracker-key-features](https://github.com/AyrtonCR/health-tracker-app/assets/98923297/742b8974-fb27-4d8a-95b1-5b188630c86d)
 
 ---
 
