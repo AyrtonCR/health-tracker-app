@@ -29,6 +29,14 @@ Some of the features this app will include are ...
 
 ---
 
+### <u> Goals for Project </u>
+
+<br>
+
+To build a useful app that solves a problem while upskilling by using some new technologies. For this app I will use Vite with Typescript.
+
+<br>
+
 ### <u> Developer Environment </u>
 
 <br>
@@ -36,6 +44,7 @@ Some of the features this app will include are ...
 The goal is to make it easy to quickly create branches to work on tickets from the Kanban board, then merge them into my dev-branch. Once enough tickets have been completed I can do a pull request to the deployed branch (main) and resolve any merge conflicts.
 
 <br>
+
 
 ### <u> Docker </u>
 
