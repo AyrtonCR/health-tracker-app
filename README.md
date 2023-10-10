@@ -14,6 +14,8 @@ The web app will include different features that are aimed at helping out a user
 
 ### <u> Goals for Project </u>
 
+<br>
+
 To build a useful app that solves a problem while upskilling by using some new technologies. For this app I will use ...
 
 <br>
