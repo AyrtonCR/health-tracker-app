@@ -12,6 +12,8 @@ The web app will include different features that are aimed at helping out a user
 
 <br>
 
+### <u> Goals for Project </u>
+
 To build a useful app that solves a problem while upskilling by using some new technologies. For this app I will use ...
 
 <br>
@@ -42,8 +44,6 @@ Some of the features this app will include are ...
 ![health-app-tracker-key-features](https://github.com/AyrtonCR/health-tracker-app/assets/98923297/742b8974-fb27-4d8a-95b1-5b188630c86d)
 
 ---
-
-### <u> Goals for Project </u>
 
 
 <br>
