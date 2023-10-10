@@ -10,6 +10,20 @@ Health Tracker App is a responsive web app that is aimed at helping users make h
 
 The web app will include different features that are aimed at helping out a user identify negative or positive health patterns in their diet. The main one will be an input section where a user can get feedback about thei dietary choices.
 
+<br>
+
+To build a useful app that solves a problem while upskilling by using some new technologies. For this app I will use ...
+
+<br>
+
+- Vite
+- Typescript
+- Tailwind
+- ExpressJS
+- PostrgeSQL
+
+<br>
+
 ![health-app-tracker-problem](https://github.com/AyrtonCR/health-tracker-app/assets/98923297/fa1c79b2-1c33-4669-b62e-5180d528db12)
 
 <br>
@@ -30,18 +44,6 @@ Some of the features this app will include are ...
 ---
 
 ### <u> Goals for Project </u>
-
-<br>
-
-To build a useful app that solves a problem while upskilling by using some new technologies. For this app I will use ...
-
-<br>
-
-- Vite
-- Typescript
-- Tailwind
-- ExpressJS
-- PostrgeSQL
 
 
 <br>
