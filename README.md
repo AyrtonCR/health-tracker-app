@@ -33,15 +33,16 @@ Some of the features this app will include are ...
 
 <br>
 
-To build a useful app that solves a problem while upskilling by using some new technologies. For this app I will use Vite with Typescript.
+To build a useful app that solves a problem while upskilling by using some new technologies. For this app I will use ...
 
 <br>
 
-### <u> Developer Environment </u>
+- Vite
+- Typescript
+- Tailwind
+- ExpressJS
+- PostrgeSQL
 
-<br>
-
-The goal is to make it easy to quickly create branches to work on tickets from the Kanban board, then merge them into my dev-branch. Once enough tickets have been completed I can do a pull request to the deployed branch (main) and resolve any merge conflicts.
 
 <br>
 
