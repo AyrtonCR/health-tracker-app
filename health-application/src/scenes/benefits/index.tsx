@@ -1,5 +1,5 @@
 import Htext from "@/shared/Htext";
-import SelectedPage, { BenefitType } from "@/shared/types";
+import { SelectedPage, BenefitType } from "@/shared/types";
 import {
   HomeModernIcon,
   UserGroupIcon,
