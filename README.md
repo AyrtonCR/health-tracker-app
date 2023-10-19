@@ -49,12 +49,3 @@ Some of the features this app will include are ...
 
 
 <br>
-
-
-### <u> Docker </u>
-
-<br>
-
-In future stages I will dockerize this app to make it easy to run in a dev environemnt.
-
-<br>
