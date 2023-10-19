@@ -1,5 +1,5 @@
 import React from "react";
-import SelectedPage from "./types";
+import { SelectedPage } from "./types";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {

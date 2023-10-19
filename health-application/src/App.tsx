@@ -3,7 +3,10 @@
 import Navbar from "@/scenes/navbar";
 import Footer from "./components/footer";
 import { useEffect, useState } from "react";
-import SelectedPage from "@/shared/types";
+import { SelectedPage } from "@/shared/types";
+import Home from "@/scenes/home";
+import Benefits from "@/scenes/benefits";
+import OurClassesPage from "@/scenes/ourClasses";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -29,6 +32,9 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+      <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
+      <OurClassesPage setSelectedPage={setSelectedPage} />
       <div className="app bg-gray20"></div>
       <Footer />
     </>
