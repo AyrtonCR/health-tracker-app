@@ -11,33 +11,37 @@ import Htext from "@/shared/Htext";
 
 const classes: Array<ClassType> = [
   {
-    name: "Weight Training Classes",
+    name: "Eating more nutritious vegetables",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image1,
   },
   {
-    name: "Yoga Classes",
+    name: "Foods that promotes weight loss",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image2,
   },
   {
-    name: "Ab Core Classes",
+    name: "Easy and exciting recipes",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image3,
   },
   {
-    name: "Adventure Classes",
+    name: "A healthy daily breakfast",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image4,
   },
   {
-    name: "Fittness Classes",
+    name: "Omega-3 and brain health",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image5,
   },
   {
-    name: "Training Classes",
+    name: "How much should you eat each day",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image6,
