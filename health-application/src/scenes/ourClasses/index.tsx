@@ -1,43 +1,47 @@
 import { SelectedPage, ClassType } from "@/shared/types";
-import image1 from "@/assets/image1.png";
-import image2 from "@/assets/image2.png";
-import image3 from "@/assets/image3.png";
-import image4 from "@/assets/image4.png";
-import image5 from "@/assets/image5.png";
-import image6 from "@/assets/image6.png";
+import image1 from "@/assets/food-slide/food1.jpg";
+import image2 from "@/assets/food-slide/food2.jpg";
+import image3 from "@/assets/food-slide/food3.jpg";
+import image4 from "@/assets/food-slide/food4.jpg";
+import image5 from "@/assets/food-slide/food5.jpg";
+import image6 from "@/assets/food-slide/food6.jpg";
 import { motion } from "framer-motion";
 import Class from "./Class";
 import Htext from "@/shared/Htext";
 
 const classes: Array<ClassType> = [
   {
-    name: "Weight Training Classes",
+    name: "Eating more nutritious vegetables",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image1,
   },
   {
-    name: "Yoga Classes",
+    name: "Foods that promotes weight loss",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image2,
   },
   {
-    name: "Ab Core Classes",
+    name: "Easy and exciting recipes",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image3,
   },
   {
-    name: "Adventure Classes",
+    name: "A healthy daily breakfast",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image4,
   },
   {
-    name: "Fittness Classes",
+    name: "Omega-3 and brain health",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image5,
   },
   {
-    name: "Training Classes",
+    name: "How much should you eat each day",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam, ullam a consequuntur impedit quidem corrupti nulla. Odio eum eveniet tempore aliquid nesciunt laudantium ipsam. Alias eum repudiandae delectus cum?",
     image: image6,
@@ -67,7 +71,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         >
           <div className="md:w-3/5">
             <Htext>
-              What we can offer you
+              Start building a healthier lifestyle today
               <p className="py-5 text-sm">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
                 doloremque nobis iste at similique a rerum praesentium iusto,
@@ -78,7 +82,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           </div>
         </motion.div>
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[2800px] whitespace-nowrap">
+          <ul className="h-[360px] w-[2800px] whitespace-nowrap">
             {classes.map((item, index) => (
               <Class
                 key={`${item.name}-${index}`}

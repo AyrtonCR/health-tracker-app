@@ -92,7 +92,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           {/* Graphic */}
           <img
-            className="max-w-lg"
+            className="grid max-w-sm justify-center"
             alt="benefits-page-graphic"
             src={BenefitsPageGraphic}
           />
@@ -113,8 +113,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   }}
                 >
                   <Htext>
-                    Millions of Happy Members getting {""}
-                    <span className="text-primary-500">FIT</span>
+                    What a healthy diet can do for your mental wellbeing {""}
                   </Htext>
                 </motion.div>
               </div>

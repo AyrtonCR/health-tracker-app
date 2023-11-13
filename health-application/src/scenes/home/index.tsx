@@ -43,7 +43,8 @@ function Home({ setSelectedPage }: Props) {
           >
             <div className="relative">
               {/* cspell: disable-next-line */}
-              <div className="before:content-httitlebg before:absolute before:-top-20 before:left-20 before:z-[-1]">
+              {/* className="before:content-httitlebg before:max-md: before:absolute before:-top-14 before:left-6 before:z-[-1] after:content-[none]" */}
+              <div>
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>
