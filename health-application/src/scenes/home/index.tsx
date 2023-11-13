@@ -1,21 +1,18 @@
 import React from "react";
-import useMediaQuery from "@/hooks/useMediaQuery";
+// import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/httitle.png";
 import HomePageGraphic from "@/assets/food-png/png-2.png";
-import SponsorRedbull from "@/assets/SponsorRedBull.png";
-import SponsorForbes from "@/assets/SponsorForbes.png";
-import SponsorFortune from "@/assets/SponsorFortune.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-
+import AddField from "@/components/addField";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 function Home({ setSelectedPage }: Props) {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  // const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
     <section
@@ -86,17 +83,35 @@ function Home({ setSelectedPage }: Props) {
       </motion.div>
       {/* Sponsors */}
 
-      {isAboveMediumScreens && (
-        <div className="h=[150px] w-full bg-primary-100 py-10">
-          <div className="mx-auto w-5/6">
-            <div className="flex w-3/5 items-center justify-between gap-8">
-              <img alt="redbull-sponsor" src={SponsorRedbull}></img>
-              <img alt="forbes-sponsor" src={SponsorForbes}></img>
-              <img alt="fortune-sponsor" src={SponsorFortune}></img>
+      <div className="h=[150px] w-full bg-primary-100 py-10">
+        <div className="mx-auto w-5/6">
+          <div className="grid justify-items-center">
+            <p className="grid ">
+              Enter food you eat with the calories into the list below ...
+            </p>
+            {/* Form Container */}
+            <div className="">
+              {/* Form */}
+              <form className="m-6 grid h-fit w-fit rounded-md border-solid border-black bg-rose-200 p-3">
+                {/* Sub title */}
+                <p>Daily food consumed:</p>
+                {/* Form Input */}
+                <div>
+                  <label>Food:</label>
+                  <input className="m-2 rounded-sm"></input>
+                </div>
+                <button className="m-2 grid justify-self-end border-[0.01rem] border-solid border-black px-3 py-[0.2rem]">
+                  Add field
+                </button>
+                <AddField />
+                <button className="rounded-md border-[0.01rem] border-solid border-black bg-white px-3 py-1 transition-all hover:scale-[1.1] hover:border-[0.09rem] hover:border-black hover:bg-slate-50">
+                  Calculate
+                </button>
+              </form>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </section>
   );
 }
