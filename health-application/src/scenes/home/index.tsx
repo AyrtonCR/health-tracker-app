@@ -1,8 +1,8 @@
 import React from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
+import HomePageText from "@/assets/httitle.png";
+import HomePageGraphic from "@/assets/food-png/png-2.png";
 import SponsorRedbull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
@@ -43,7 +43,7 @@ function Home({ setSelectedPage }: Props) {
           >
             <div className="relative">
               {/* cspell: disable-next-line */}
-              <div className="before:absolute before:-top-20 before:left-20 before:z-[-1] before:content-evolvetext">
+              <div className="before:content-httitlebg before:absolute before:-top-20 before:left-20 before:z-[-1]">
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>
@@ -67,7 +67,7 @@ function Home({ setSelectedPage }: Props) {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
+              Sign Up
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"

@@ -7,26 +7,26 @@ import {
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
+import BenefitsPageGraphic from "@/assets/food-png/png-3.png";
 import ActionButton from "@/shared/ActionButton";
 motion;
 
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "State of the Art Facilities",
+    title: "Get the latest information on healthy living",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nesciunt nemo voluptate perspiciatis cum temporibus nisi debitis dolor adipisci reprehenderit dicta, assumenda possimus expedita commodi ipsa voluptates. Eligendi, placeat repudiandae!",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100s of diverse classes",
+    title: "Access a wide database of nutrient knowledge",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nesciunt nemo voluptate perspiciatis cum temporibus nisi debitis dolor adipisci reprehenderit dicta, assumenda possimus expedita commodi ipsa voluptates. Eligendi, placeat repudiandae!",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and pro trainers",
+    title: "Identify what could be holding you back",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nesciunt nemo voluptate perspiciatis cum temporibus nisi debitis dolor adipisci reprehenderit dicta, assumenda possimus expedita commodi ipsa voluptates. Eligendi, placeat repudiandae!",
   },
@@ -61,7 +61,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <Htext>More than just a gym</Htext>
+          <Htext>Feel the benefits of healthy living today</Htext>
           <p className="my-5 text-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet autem
             laboriosam quae, maiores ducimus provident voluptatum nostrum
@@ -92,7 +92,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           {/* Graphic */}
           <img
-            className="mx-auto"
+            className="max-w-lg"
             alt="benefits-page-graphic"
             src={BenefitsPageGraphic}
           />

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Logo from "@/assets/Logo.png";
+import Logo from "@/assets/htlogo.png";
+// import Logo from "@/assets/Logo.png";
 import Link from "./link";
-import SelectedPage from "@/shared/types";
+import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 
@@ -26,7 +27,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* Left Side */}
-            <img alt="Logo" src={Logo} />
+            <img alt="Logo" src={Logo} className="h-4" />
             {/* Right side */}
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
@@ -56,7 +57,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 <div className={`${flexBetween} gap-8`}>
                   <p>Sign In</p>
                   <ActionButton setSelectedPage={setSelectedPage}>
-                    Become a member
+                    Donate
                   </ActionButton>
                 </div>
               </div>

@@ -35,7 +35,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClassesPage setSelectedPage={setSelectedPage} />
-      <div className="app bg-gray20"></div>
+      <div className=""></div>
       <Footer />
     </>
   );
