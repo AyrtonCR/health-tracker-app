@@ -67,8 +67,8 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         >
           <div className="md:w-3/5">
             <Htext>
-              Our Classes
-              <p className="py-5 ">
+              What we can offer you
+              <p className="py-5 text-sm">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
                 doloremque nobis iste at similique a rerum praesentium iusto,
                 iure incidunt odio velit inventore explicabo esse atque alias
