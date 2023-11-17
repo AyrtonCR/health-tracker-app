@@ -6,7 +6,7 @@ import HomePageGraphic from "@/assets/food-png/png-2.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import AddField from "@/components/addField";
+// import AddField from "@/components/addField";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -18,6 +18,12 @@ function Home({ setSelectedPage }: Props) {
 
   const handleServiceAdd = () => {
     setDaily([...daily, { Food: "" }]);
+  };
+
+  const handleServiceRemove = (index: number) => {
+    const list = [...daily];
+    list.splice(index, 1);
+    setDaily(list);
   };
   return (
     <section
@@ -120,6 +126,7 @@ function Home({ setSelectedPage }: Props) {
                       <div>
                         {daily.length > 1 && (
                           <button
+                            onClick={() => handleServiceRemove(index)}
                             type="button"
                             className="m-2 grid justify-self-end border-[0.01rem] border-solid border-black px-3 py-[0.2rem]"
                           >
