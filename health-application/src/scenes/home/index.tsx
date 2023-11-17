@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/httitle.png";
@@ -7,13 +7,18 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import AddField from "@/components/addField";
+
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 function Home({ setSelectedPage }: Props) {
+  const [daily, setDaily] = useState([{ Food: "" }]);
   // const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
+  const handleServiceAdd = () => {
+    setDaily([...daily, { Food: "" }]);
+  };
   return (
     <section
       id="home"
@@ -96,14 +101,37 @@ function Home({ setSelectedPage }: Props) {
                 {/* Sub title */}
                 <p>Daily food consumed:</p>
                 {/* Form Input */}
-                <div>
-                  <label>Food:</label>
-                  <input className="m-2 rounded-sm"></input>
-                </div>
-                <button className="m-2 grid justify-self-end border-[0.01rem] border-solid border-black px-3 py-[0.2rem]">
-                  Add field
-                </button>
-                <AddField />
+
+                {daily.map((singleDaily, index) => (
+                  <>
+                    <div key={index}>
+                      <label>Food:</label>
+                      <input className="m-2 rounded-sm"></input>
+                      <div>
+                        {daily.length - 1 === index && daily.length < 10 && (
+                          <button
+                            onClick={handleServiceAdd}
+                            className="m-2 grid justify-self-end border-[0.01rem] border-solid border-black px-3 py-[0.2rem]"
+                          >
+                            Add field
+                          </button>
+                        )}
+                      </div>
+                      <div>
+                        {daily.length > 1 && (
+                          <button
+                            type="button"
+                            className="m-2 grid justify-self-end border-[0.01rem] border-solid border-black px-3 py-[0.2rem]"
+                          >
+                            <span>Remove</span>
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </>
+                ))}
+
+                {/* <AddField /> */}
                 <button className="rounded-md border-[0.01rem] border-solid border-black bg-white px-3 py-1 transition-all hover:scale-[1.1] hover:border-[0.09rem] hover:border-black hover:bg-slate-50">
                   Calculate
                 </button>

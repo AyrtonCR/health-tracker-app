@@ -17,7 +17,11 @@ export default function AddField() {
       <button onClick={handleClick}>Submit</button>
 
       {Array.from(Array(counter)).map((c, index) => {
-        return <input key={c} type="text"></input>;
+        return (
+          <input key={c} type="text">
+            {index}
+          </input>
+        );
       })}
     </div>
   );
