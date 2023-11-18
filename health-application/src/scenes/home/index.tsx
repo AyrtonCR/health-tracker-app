@@ -6,18 +6,21 @@ import HomePageGraphic from "@/assets/food-png/png-2.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
+import { list } from "@/shared/types";
 // import AddField from "@/components/addField";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
+  e: EventListener;
+  list: (value: list) => void;
 };
 
 function Home({ setSelectedPage }: Props) {
-  const [daily, setDaily] = useState([{ Food: "" }]);
-  // const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  const [daily, setDaily] = useState([{ food: "" }]);
+  console.log(daily);
 
   const handleServiceAdd = () => {
-    setDaily([...daily, { Food: "" }]);
+    setDaily([...daily, { food: "" }]);
   };
 
   const handleServiceRemove = (index: number) => {
@@ -25,6 +28,33 @@ function Home({ setSelectedPage }: Props) {
     list.splice(index, 1);
     setDaily(list);
   };
+
+  // const handleServiceChange = (
+  //   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  //   e: any,
+  //   index: number,
+  // ) => {
+  //   const { name, value } = e.target;
+  //   console.log(e.target);
+  //   const list = [...daily];
+  //   list[index][name] = value;
+  //   setDaily(list);
+  // };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+  const handleServiceChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    index: any,
+  ) => {
+    const { name, value } = e.target as HTMLInputElement;
+
+    const list = [...daily];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    list[index][name] = value;
+    setDaily(list);
+  };
+
   return (
     <section
       id="home"
@@ -112,7 +142,15 @@ function Home({ setSelectedPage }: Props) {
                   <>
                     <div key={index}>
                       <label>Food:</label>
-                      <input className="m-2 rounded-sm"></input>
+                      <input
+                        name="foods"
+                        type="text"
+                        id="foods"
+                        className="m-2 rounded-sm"
+                        required
+                        value={singleDaily.food}
+                        onChange={(e) => handleServiceChange(e, index)}
+                      ></input>
                       <div>
                         {daily.length - 1 === index && daily.length < 10 && (
                           <button
