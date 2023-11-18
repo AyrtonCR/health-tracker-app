@@ -7,6 +7,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import { list } from "@/shared/types";
+import { FormatInputPathObject } from "path";
 // import AddField from "@/components/addField";
 
 type Props = {
@@ -44,13 +45,12 @@ function Home({ setSelectedPage }: Props) {
 
   const handleServiceChange = (
     e: React.ChangeEvent<HTMLInputElement>,
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    index: any,
+    index: number,
   ) => {
-    const { name, value } = e.target as HTMLInputElement;
+    const { name, value } = e.currentTarget;
 
     const list = [...daily];
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     list[index][name] = value;
     setDaily(list);
   };
@@ -143,9 +143,9 @@ function Home({ setSelectedPage }: Props) {
                     <div key={index}>
                       <label>Food:</label>
                       <input
-                        name="foods"
+                        name="food"
                         type="text"
-                        id="foods"
+                        id="food"
                         className="m-2 rounded-sm"
                         required
                         value={singleDaily.food}
