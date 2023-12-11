@@ -16,3 +16,9 @@ export interface ClassType {
   description?: string;
   image: string;
 }
+
+export interface list {
+  food: unknown;
+  index?: number | string | Array<{ Food: "" }> | object;
+  name: string;
+}
